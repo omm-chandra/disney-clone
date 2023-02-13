@@ -1,0 +1,120 @@
+.page_div{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../image/login-background.jpg);
+    height: 100vh;
+    width: 100vw;
+}
+
+.hulu{
+    height: 15%;
+}
+
+.blue_btn{
+    text-align: center;
+    background-color: #130cc9;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.5rem 10rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border: none;
+    margin: 0 1rem;
+}
+
+.para{
+    width: 40%;
+    font-family:sans-serif;
+    padding: 1.5rem 0;
+}
+
+.all{
+    height: 7%;
+}
+
+@media screen and (max-width: 1023px) {
+    .hulu{
+        height: 11%;
+    }
+
+    .blue_btn{
+    font-size: 1rem;
+    padding: 0.5rem 7rem;
+
+    }
+
+    .para{
+        width: 60%;
+    }
+
+    .all{
+        height: 4.8%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .hulu{
+        height: 10%;
+    }
+
+    .blue_btn{
+    font-size: 0.8rem;
+    padding: 0.5rem 6rem;
+
+    }
+
+    .para{
+        width: 50%;
+    }
+
+    .all{
+        height: 4%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hulu{
+        height: 9%;
+    }
+
+    .blue_btn{
+    font-size: 0.7rem;
+    padding: 0.5rem 5rem;
+
+    }
+
+    .para{
+        width: 70%;
+    }
+
+    .all{
+        height: 3%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hulu{
+        height: 7%;
+    }
+
+    .blue_btn{
+    font-size: 0.6rem;
+    padding: 0.5rem 4rem;
+
+    }
+
+    .para{
+        width: 80%;
+        font-size: 0.7rem;
+    }
+
+    .all{
+        height: 2.3%;
+    }
+}

@@ -1,0 +1,269 @@
+html,
+body {
+    position: relative;
+    background-color: #010817;
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    background-color: #020b1e;
+    height: 4rem;
+    padding: 1rem;
+}
+
+.swiper {
+    height: 50%;
+    position: relative;
+    top: 2rem;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.avatar {
+    display: inline-block;
+    width: 80vw;
+    height: 25rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.swiper-button-prev {
+    font-size: 1rem;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+.companies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 1rem;
+    gap: 3rem;
+}
+
+.boxes {
+    background-color: #010023;
+    width: 16%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #232323;
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+}
+
+.boxes:hover{
+    border:  3px solid white;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.05);
+}
+
+.img {
+    height: 40%;
+    width: 70%;
+    margin: 2rem 0;
+    border-radius: 0;
+    z-index: 1;
+}
+
+.video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    z-index: 1;
+    opacity: 0;
+    object-fit: cover;
+}
+
+.video:hover {
+    opacity: 1;
+}
+
+#ntl {
+    margin: 2.4rem 0;
+}
+
+.section>h2 {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    padding-left: 2rem;
+    margin: 1rem 0;
+}
+
+#box_line {
+    display: grid;
+    justify-content: space-around;
+    align-content: center;
+    margin: 0.5rem 1.5rem;
+    gap: 1.5rem;
+    grid-template-columns: auto auto auto auto;
+}
+
+.boxs{
+    border: 3px solid #444444;
+    border-radius: 7px;
+    width: 100%;
+    margin: 1rem 0.3rem;
+}
+
+.cardImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.boxs:hover{
+    transform: scale(1.05);
+    border: 3px solid white ;
+    transition: all 0.4s ease-in-out;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1370px) {
+    .img {
+        width: 60%;
+    }
+
+    #ntl {
+        margin: 2.3rem 0;
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    .img {
+        width: 53%;
+    }
+
+    #ntl {
+        margin: 2.3rem 0;
+    }
+
+    .avatar {
+        height: 20rem;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .img {
+        width: 45%;
+    }
+
+    #ntl {
+        margin: 2.2rem 0;
+    }
+
+    .avatar {
+        height: 18rem;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .img {
+        width: 38%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .companies {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 0;
+        margin: 0;
+    }
+    .boxes{
+        width: 80%;
+    }
+
+    .img {
+        margin: 5rem 0;
+    }
+
+    .video{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #ntl {
+        margin: 5.4rem 0;
+    }
+
+    #box_line {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .avatar{
+        height: 16rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .avatar{
+        height: 14rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .avatar{
+        height: 12rem;
+    }
+    .img {
+        margin: 4rem 0;
+    }
+    #ntl{
+        margin: 4.4rem 0;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .avatar{
+        height: 10rem;
+    }
+    .img {
+        margin: 3.1rem 0;
+    }
+    #ntl{
+        margin: 3.5rem 0;
+    }
+    #box_line{
+        gap: 0.8rem;
+    }
+}
